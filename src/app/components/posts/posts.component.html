@@ -1,0 +1,3 @@
+<h2>{{ postsHeader }}</h2>
+<app-search-posts [(ngModel)]="searchFilter" name="searchFilter" ngDefaultControl></app-search-posts>
+<app-post-list [postList]="postList | postPipe:searchFilter"></app-post-list>
