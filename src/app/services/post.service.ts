@@ -29,11 +29,11 @@ export class PostService {
 
   postList: Article[];
 
-  public getPosts(): Observable<Article[]> {
-    return this.http.get<Article[]>(this.URL);
-  }
-
   constructor(private http: HttpClient) { 
     this.postList = JSON.parse(this.postListJson);
+  }
+
+  public getPosts(): Observable<Article[]> {
+    return this.http.get<Article[]>(this.URL);
   }
 }

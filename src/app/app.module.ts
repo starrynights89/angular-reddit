@@ -9,7 +9,7 @@ import { SearchPostsComponent } from './components/search-posts/search-posts.com
 import { PostsComponent } from './components/posts/posts.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { PostPipe } from 'src/app/pipes/post.pipe';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +24,9 @@ import { HttpClient } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClient
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
