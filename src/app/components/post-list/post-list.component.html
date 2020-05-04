@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Link</th>
+        <th>Votes</th>
+    </tr>
+    <tr *ngFor="let post of postList">
+        <td>{{ post.title }}</td>
+        <td>{{ post.link }}</td>
+        <td>{{ post.votes }}</td>
+    </tr>
+</table>
