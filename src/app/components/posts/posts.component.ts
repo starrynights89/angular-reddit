@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from 'src/app/article/article.model';
-import { PostService } from 'src/app/services/post.service';
+import { PostService } from 'src/app/_services/post.service';
 
 @Component({
   selector: 'app-posts',
@@ -10,7 +10,7 @@ import { PostService } from 'src/app/services/post.service';
 export class PostsComponent implements OnInit {
 
   postsHeader = `Reddit Clone Posts`;
-  
+
   searchFilter = ``;
 
   postList: Article[];
