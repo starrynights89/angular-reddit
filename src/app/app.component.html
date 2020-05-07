@@ -1,4 +1,18 @@
-<router-outlet></router-outlet>
+<!-- nav -->
+<nav class="navbar navbar-expand">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+    <a class="nav-item nav-link" (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="app-container" [ngClass]="{ 'bg-light': user}">
+  <!-- <alert></alert> -->
+  <router-outlet></router-outlet>
+</div>
+
 <form class="ui large form segment">
   <h3 class="ui header">Add a Link</h3>
 
