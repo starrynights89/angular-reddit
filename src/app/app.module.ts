@@ -10,8 +10,6 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { PostPipe } from 'src/app/pipes/post.pipe';
 import { HttpClientModule } from '@angular/common/http';
-import { AccountComponent } from './account/account.component';
-import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +18,7 @@ import { UsersComponent } from './users/users.component';
     SearchPostsComponent,
     PostsComponent,
     PostListComponent,
-    PostPipe,
-    AccountComponent,
-    UsersComponent
+    PostPipe
   ],
   imports: [
     BrowserModule,
