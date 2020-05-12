@@ -10,6 +10,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { PostPipe } from 'src/app/pipes/post.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     SearchPostsComponent,
     PostsComponent,
     PostListComponent,
-    PostPipe
+    PostPipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
